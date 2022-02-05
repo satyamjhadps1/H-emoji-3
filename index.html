@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>Hand Gesture Guesser</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body onload="load()">
+  <div class="container">
+  
+    <center>
+      <h3 class="btn btn-warning heading">Hand Gesture Guesser
+        <br>
+        <span>👍</span>
+        <span>👊</span>
+        <span>🖐</span>
+        <span>🤟</span>
+        <span>✌</span>
+        <span>😄</span>
+        <span>🤚</span>
+        <span>✋</span>
+        <span>☝</span>
+        <span>👇</span>
+        <span>👆</span>
+        <span>🤏</span>
+      </h3>
+      <br><br>
+
+      <p style="font-size: 22px;">Take Your Hand's Selfie to generate emoji
+      	<br>
+        <b style="color: yellow;"> ✌</b>
+        <b style="color: yellow; border-left: 2px solid white;">👍</b>
+        <b style="color: yellow; border-left: 2px solid white;">🙌</b>
+        <b style="color: yellow; border-left: 2px solid white;">👌</b>
+        <b style="color: yellow; border-left: 2px solid white;">👎</b>
+        <br>
+      </p>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Webcam View-</label>
+        <div id="camera"></div>
+        <br>
+        <button onclick="take_snap()" class="btn btn-warning">Take Your Hand's Selfie</button>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Prediction</label>
+        <p class="emoji" id="emoji_update"></p>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Snapshot-</label>
+        <div id="result"></div>
+        <br><br>
+        <button onclick="check()" class="btn btn-success">Predict Emoji</button>
+      </div>
+      <br>
+      <br>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <div class="copy_right_footer">
+        Developed By - Satyam Jha,
+        ©Hand Gesture Guesser, Model - https://teachablemachine.withgoogle.com/models/kFnHL2NVq/;
+      </div>
+    </center>
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
